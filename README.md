@@ -2,6 +2,8 @@
 多种Layout的展示,使用只要2行代码,自定义模态控制器切换动画
  四种Layout的界面展示,如下引入头文件即可
     switch (self.flag) {
+    
+       
         case 1:
             _waterlayout=[[YTWaterflowLayout alloc]init];
             _collectionView.collectionViewLayout=_waterlayout;
