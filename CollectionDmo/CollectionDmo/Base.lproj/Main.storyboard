@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oKg-wc-dtA">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="V7w-Kd-cuh">
+            <objects>
+                <navigationController id="oKg-wc-dtA" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gN6-T1-nvY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ts8-oW-UmD" kind="relationship" relationship="rootViewController" id="z0u-hr-Eea"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqA-6Y-zO0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-781" y="-33"/>
+        </scene>
+        <!--CollectionDemo-->
+        <scene sceneID="Z7N-J8-Mrf">
+            <objects>
+                <viewController id="ts8-oW-UmD" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="21l-Qa-dGd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gjh-Xk-ino"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bea-o8-Hgq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bh3-Z9-pAE">
+                                <rect key="frame" x="91" y="138" width="119" height="30"/>
+                                <animations/>
+                                <state key="normal" title="waterFlowLayout"/>
+                                <connections>
+                                    <segue destination="mdF-9j-2uW" kind="presentation" identifier="waterflowlauout" id="G8r-Pn-AD9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mz-Of-vjN">
+                                <rect key="frame" x="111" y="209" width="78" height="30"/>
+                                <animations/>
+                                <state key="normal" title="cicleLayout"/>
+                                <connections>
+                                    <segue destination="mdF-9j-2uW" kind="presentation" identifier="ciclelayout" id="mcy-FD-iO3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqo-KQ-iBR">
+                                <rect key="frame" x="113" y="275" width="75" height="30"/>
+                                <animations/>
+                                <state key="normal" title="LineLayout"/>
+                                <connections>
+                                    <segue destination="mdF-9j-2uW" kind="presentation" identifier="linelayout" id="cF9-02-20f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOL-rE-q5k">
+                                <rect key="frame" x="108" y="344" width="85" height="30"/>
+                                <animations/>
+                                <state key="normal" title="StackLayout"/>
+                                <connections>
+                                    <segue destination="mdF-9j-2uW" kind="presentation" identifier="stacklayout" id="NuW-FS-Ete"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CollectionDemo" id="nMx-B7-n8X"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UW7-m8-n9d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-419" y="-39"/>
+        </scene>
+        <!--collectioView-->
+        <scene sceneID="Od1-lZ-pCf">
+            <objects>
+                <viewController id="mdF-9j-2uW" customClass="CollectionController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JaO-eL-S3M"/>
+                        <viewControllerLayoutGuide type="bottom" id="WKu-c0-x5N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2bi-4Y-ILP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAb-Nq-jlj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVb-BC-kJQ">
+                                        <rect key="frame" x="16" y="0.0" width="58" height="44"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Back"/>
+                                        <connections>
+                                            <action selector="didClickBackButton:" destination="mdF-9j-2uW" eventType="touchUpInside" id="DBB-AV-x5v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rFG-P0-oeA"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nWT-Mt-cmW">
+                                <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YJ2-8i-RFa">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="btJ-bC-YpW">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nWT-Mt-cmW" secondAttribute="trailing" id="A9H-jg-4Fo"/>
+                            <constraint firstItem="AAb-Nq-jlj" firstAttribute="leading" secondItem="2bi-4Y-ILP" secondAttribute="leading" id="Ctu-AY-Wpl"/>
+                            <constraint firstAttribute="trailing" secondItem="AAb-Nq-jlj" secondAttribute="trailing" id="IRx-o4-NL1"/>
+                            <constraint firstItem="nWT-Mt-cmW" firstAttribute="leading" secondItem="2bi-4Y-ILP" secondAttribute="leading" id="PyX-ph-e2f"/>
+                            <constraint firstItem="WKu-c0-x5N" firstAttribute="top" secondItem="nWT-Mt-cmW" secondAttribute="bottom" id="vcB-Vj-eaf"/>
+                            <constraint firstItem="nWT-Mt-cmW" firstAttribute="top" secondItem="AAb-Nq-jlj" secondAttribute="bottom" id="xj6-Ry-ziM"/>
+                            <constraint firstItem="AAb-Nq-jlj" firstAttribute="top" secondItem="2bi-4Y-ILP" secondAttribute="top" id="yvj-Lt-WpU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="collectioView" id="jUi-GA-fEm"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="collectionView" destination="nWT-Mt-cmW" id="6YM-jJ-QBO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8mS-7O-9tN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-39"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="G8r-Pn-AD9"/>
+    </inferredMetricsTieBreakers>
+</document>
